@@ -27,10 +27,10 @@ You might say, why not use `mv`  :thinking: . Indeed it suffice for renaming jus
 1. To rename part of filename or directory
 
    ```shell
-   rename -n 's/4447/4449/'
+   rename -n 's/4447/4449/' *
    ```
 
-   '-n' here is used to verbose the changes about to made, thus, above command will not directly perform renaming operation, but rather, inform you about the changes.
+   '-n' here is used to verbose the changes about to made, thus, above command will not directly perform renaming operation, but rather, inform you about the changes. `*` here refers to all the files in the current directory.
 
    Output:
 
@@ -138,7 +138,7 @@ You might say, why not use `mv`  :thinking: . Indeed it suffice for renaming jus
    3. Rename files with new roll no. 
    4. Replace all the instances of `roll_no` in the contents of files with new roll no.
    5. Done
-
-
+   
+   You can find the above script as [replicate.sh](replicate.sh) in this repository.
 
 **Disclaimer:** Above scripts are used only to demonstrate the use-case and not used in any malicious activities :stuck_out_tongue_winking_eye:
